@@ -1,4 +1,3 @@
-#![feature(trace_macros)]
 /*!
 # Big Mac
 
@@ -9,12 +8,12 @@ To use the macro, call it as such (examples for chain_linq's parameters provided
 ```
 branching_parser!{
     @unroll
-    path::to::this::module; (chain_linq;) (note the ; at the end)
-    name_of_entrypoint_macro (linq)
-    name_of_parsing_macro (linq_parser)
-    name_of_filter_macro (linq_filter)
-    fully::qualified::destination::macro; (chain_linq::linq_impl) (note the ; at the end)
-    {series of branch specifiers}
+    path::to::this::module; // (chain_linq;) (note the ; at the end)
+    name_of_entrypoint_macro // (linq)
+    name_of_parsing_macro // (linq_parser)
+    name_of_filter_macro // (linq_filter)
+    fully::qualified::destination::macro; // (chain_linq::linq_impl) (note the ; at the end)
+    // {series of branch specifiers}
 }
 ```
 
