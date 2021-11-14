@@ -54,12 +54,12 @@ For example, LINQ's select statements (of the form select # \[into #\] where \[\
 {
     select
     {
-        ##
+        #
         {}
         {
             into
             {
-                ## {}
+                # {}
             }
         }
     }
@@ -72,16 +72,16 @@ Another example is LINQ's group by (group # by # \[into #\]):
 {
     group
     {
-        ##
+        #
         {
             by
             {
-                ##
+                #
                 {}
                 {
                     into
                     {
-                        ## {}
+                        # {}
                     }
                 }
             }
@@ -96,7 +96,7 @@ Finally, an example of a word-terminal chain is LINQ's orderby (orderby # \[asce
 {
     orderby
     {
-        ##
+        #
         {}
         {
             ascending
