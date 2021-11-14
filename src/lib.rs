@@ -22,13 +22,11 @@ branching_parser!{
 
 * @unroll is a specifier used to pick the entrypoint syntax of the branching_parser macro.
 
-* The module path is used to set up macro calls correctly.
+* The module path is used to set up macro calls correctly. It should be the name of a module that the resulting entrypoint, parser, and filter macros are accessible from 
+publicly (e.g. the module you invoked branching_parser! in)
 
-* It should be the name of a module that the resulting entrypoint, parser, and filter macros are accessible from publicly (e.g. the module you invoked branching_parser! in)
-
-* The 3 names after the path are how you choose the names of the outputted macros. While the parser and filter must be publicly available to consumers of the resulting macro,
-
-* they do not need to be called manually. 
+* The 3 names after the path are how you choose the names of the outputted macros. While the parser and filter must be publicly available to consumers of the resulting macro, 
+they do not need to be called manually. 
 
 * The destination macro path is the macro to pipe the resulting parsed token stream into; for example, put core::stringify for your macro to ultimately evaluate to a string.
 
