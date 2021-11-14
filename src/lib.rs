@@ -5,6 +5,10 @@ This crate contains the branching_parser! metamacro, which can be used to create
 
 To use the macro, call it as such (examples for chain_linq's parameters provided)
 
+*Example parser transformation:*
+
+"from x in xs select x * 2" => "from {x} in {xs}, select {x * 2},"
+
 ```
 branching_parser!{
     @unroll
