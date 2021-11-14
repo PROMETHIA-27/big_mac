@@ -1,6 +1,6 @@
 [package]
 name = "big_mac"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 author = "PROMETHIA"
 description = "A metamacro toolkit for writing complex macros."
